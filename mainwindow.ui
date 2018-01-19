@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>173</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QComboBox" name="cb2"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="leDstDir"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="cb3">
+        <property name="text">
+         <string>same as src dir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pbDstDir">
+        <property name="text">
+         <string>Open Dst Dir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="leSrcDir"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pbSrcDir">
+        <property name="text">
+         <string>Open Src Dir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cb1"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pbConvert">
+        <property name="text">
+         <string>Convert</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>652</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
