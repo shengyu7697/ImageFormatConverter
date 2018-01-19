@@ -101,8 +101,10 @@ void MainWindow::slotSetDstImageType(int i)
 
 void MainWindow::slotSetDstImagePath(bool b)
 {
-    if (b)
-        ui->leDstDir->setText(ui->leSrcDir->text());
+    if (b) {
+        dstDir = ui->leSrcDir->text();
+        ui->leDstDir->setText(dstDir);
+    }
 }
 
 void MainWindow::slotOpenSrcDir()
