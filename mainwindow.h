@@ -32,6 +32,8 @@ private Q_SLOTS:
     void slotSetSrcImageType(int i);
     void slotSetDstImageType(int i);
     void slotSetDstImagePath(bool b);
+    void slotSetSrcDir(const QString &);
+    void slotSetDstDir(const QString &);
     void slotOpenSrcDir();
     void slotOpenDstDir();
 };

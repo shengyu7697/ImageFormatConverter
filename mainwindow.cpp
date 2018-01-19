@@ -34,6 +34,8 @@ MainWindow::MainWindow(QWidget *parent) :
     slotSetSrcImageType(0);
     slotSetDstImageType(0);
 
+    QObject::connect(ui->leSrcDir, SIGNAL(textChanged(const QString &)), this, SLOT(slotSetSrcDir(const QString &)));
+    QObject::connect(ui->leDstDir, SIGNAL(textChanged(const QString &)), this, SLOT(slotSetDstDir(const QString &)));
     QObject::connect(ui->pbSrcDir, SIGNAL(clicked()), this, SLOT(slotOpenSrcDir()));
     QObject::connect(ui->pbDstDir, SIGNAL(clicked()), this, SLOT(slotOpenDstDir()));
     QObject::connect(ui->cb1, SIGNAL(activated(int)), this, SLOT(slotSetSrcImageType(int)));
@@ -105,6 +107,16 @@ void MainWindow::slotSetDstImagePath(bool b)
         dstDir = ui->leSrcDir->text();
         ui->leDstDir->setText(dstDir);
     }
+}
+
+void MainWindow::slotSetSrcDir(const QString &dir)
+{
+    srcDir = dir;
+}
+
+void MainWindow::slotSetDstDir(const QString &dir)
+{
+    dstDir = dir;
 }
 
 void MainWindow::slotOpenSrcDir()
