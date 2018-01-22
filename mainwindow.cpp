@@ -21,10 +21,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->leSrcDir->setText(srcDir);
     ui->leDstDir->setText(dstDir);
 
-    mImageType.push_back("png");
+    mImageType.push_back("bmp");
     mImageType.push_back("jpg");
     mImageType.push_back("jpeg");
-    mImageType.push_back("bmp");
+    mImageType.push_back("png");
+    mImageType.push_back("tiff");
 
     for (int i = 0; i < (int)mImageType.size(); i++) {
         ui->cb1->addItem(mImageType[i]);
