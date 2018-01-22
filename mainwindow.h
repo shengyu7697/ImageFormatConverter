@@ -36,6 +36,7 @@ private Q_SLOTS:
     void slotSetDstDir(const QString &);
     void slotOpenSrcDir();
     void slotOpenDstDir();
+    void on_actionAbout_triggered();
 };
 
 #endif // MAINWINDOW_H

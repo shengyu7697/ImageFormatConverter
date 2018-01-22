@@ -8,6 +8,7 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QFileDialog>
+#include <QMessageBox>
 
 using namespace std;
 using namespace cv;
@@ -157,4 +158,11 @@ void MainWindow::slotOpenDstDir()
 void MainWindow::showStatusbarMessage(const QString &text, int timeout)
 {
     ui->statusBar->showMessage(text, timeout);
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QString str = QString("ImageFormatConverter %1\n"
+                          "Created by ShengYu Peng.").arg("0.9.1");
+    QMessageBox::about(this, "About", str);
 }
