@@ -22,11 +22,27 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->leSrcDir->setText(srcDir);
     ui->leDstDir->setText(dstDir);
 
+    // See imread() for the list of supported formats (OpenCV 3.3.1)
     mImageType.push_back("bmp");
-    mImageType.push_back("jpg");
+    mImageType.push_back("dib");
+    mImageType.push_back("exr");
+    mImageType.push_back("hdr");
+    mImageType.push_back("jp2");
+    mImageType.push_back("jpe");
     mImageType.push_back("jpeg");
+    mImageType.push_back("jpg");
+    mImageType.push_back("pbm");
+    mImageType.push_back("pgm");
+    mImageType.push_back("pic");
     mImageType.push_back("png");
+    mImageType.push_back("pnm");
+    mImageType.push_back("ppm");
+    mImageType.push_back("pxm");
+    mImageType.push_back("ras");
+    mImageType.push_back("sr");
+    mImageType.push_back("tif");
     mImageType.push_back("tiff");
+    mImageType.push_back("webp");
 
     for (int i = 0; i < (int)mImageType.size(); i++) {
         ui->cb1->addItem(mImageType[i]);
