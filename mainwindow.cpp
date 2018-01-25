@@ -178,7 +178,8 @@ void MainWindow::showStatusbarMessage(const QString &text, int timeout)
 
 void MainWindow::on_actionAbout_triggered()
 {
+    QString version(GIT_VERSION);
     QString str = QString("ImageFormatConverter %1\n"
-                          "Created by ShengYu Peng.").arg("0.9.1");
+                          "Created by ShengYu Peng.").arg(version);
     QMessageBox::about(this, "About", str);
 }

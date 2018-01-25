@@ -15,6 +15,10 @@ PKGCONFIG += opencv
 
 QMAKE_CXXFLAGS += -std=c++11
 
+#GIT_VERSION = 0.9.1
+GIT_VERSION="$(shell git -C \""$$_PRO_FILE_PWD_"\" describe)"
+DEFINES += GIT_VERSION=\\\"$$GIT_VERSION\\\"
+
 SOURCES += main.cpp\
         mainwindow.cpp
 
