@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("ImageFormatConverter");
 
     ui->leSrcDir->setText(srcDir);
     ui->leDstDir->setText(dstDir);
