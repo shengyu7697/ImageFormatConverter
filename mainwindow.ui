@@ -26,14 +26,14 @@
       <item row="2" column="0">
        <widget class="QCheckBox" name="cb3">
         <property name="text">
-         <string>same as src dir</string>
+         <string>Same as Src Directory</string>
         </property>
        </widget>
       </item>
       <item row="1" column="2">
        <widget class="QPushButton" name="pbDstDir">
         <property name="text">
-         <string>Open Dst Dir</string>
+         <string>Open Dst Directory</string>
         </property>
        </widget>
       </item>
@@ -43,7 +43,7 @@
       <item row="0" column="2">
        <widget class="QPushButton" name="pbSrcDir">
         <property name="text">
-         <string>Open Src Dir</string>
+         <string>Open Src Directory</string>
         </property>
        </widget>
       </item>
