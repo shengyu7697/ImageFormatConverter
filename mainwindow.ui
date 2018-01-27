@@ -78,7 +78,11 @@
    </widget>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">QStatusBar{border-top: 1px outset grey;}</string>
+   </property>
+  </widget>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
