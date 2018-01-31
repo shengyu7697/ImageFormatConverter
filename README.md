@@ -26,11 +26,18 @@ Ubuntu 16.04
     + OpenEXR Image files - *.exr
     + Radiance HDR - *.hdr, *.pic
 
+## Todo
+* Support unicode filename on windows
+* Support drag and drop
+* Support 繁體中文 language
+* Add icon
+
 ## System Requirement
 Windows, Mac OS, Linux  
 
 ## Develop Environment
-Qt  
+* Qt
+* OpenCV 3.3.1
 
 ## License
 ImageFormatConverter is published under the MIT license.  
