@@ -1,7 +1,5 @@
 ImageFormatConverter
 ====================
-
-## Introduction
 ImageFormatConverter is a tool that convert image format to another image format.  
 Ex: Covert jpeg to png. It will covert all jpeg images of the directory to png images.  
   
