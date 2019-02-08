@@ -3,8 +3,8 @@ ImageFormatConverter
 ImageFormatConverter is a tool that convert image format to another image format.  
 Ex: Covert jpeg to png. It will covert all jpeg images of the directory to png images.  
   
-Windows 7  
-![screenshot](https://raw.github.com/shengyu7697/ImageFormatConverter/master/screenshot/screenshot_win7.png)  
+Demo on Windows 7  
+![demo](https://raw.github.com/shengyu7697/ImageFormatConverter/master/demo_win7.gif)  
   
 Ubuntu 16.04  
 ![screenshot](https://raw.github.com/shengyu7697/ImageFormatConverter/master/screenshot/screenshot_ubuntu1604.png)  
